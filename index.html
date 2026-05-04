@@ -1,10 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta http-equiv="refresh" content="0; url=https://ee-yogeshdahal90.projects.earthengine.app/view/contour" />
-    <title>Redirecting to Pro Asset Mapper</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Asset Mapper | Contour Edition</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px 10px;
+            background: #ffffff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            z-index: 10;
+        }
+
+        .header h1 {
+            margin: 0;
+            color: #2c3e50;
+            font-size: 24px;
+            letter-spacing: 1px;
+        }
+
+        .header p {
+            margin: 5px 0 0;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+
+        .app-container {
+            flex-grow: 1;
+            position: relative;
+            margin: 20px auto;
+            width: 95%;
+            max-width: 1400px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+            border: 1px solid #dcdde1;
+        }
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            font-size: 12px;
+            color: #95a5a6;
+        }
+    </style>
 </head>
 <body>
-    <p>Redirecting you to the <a href="https://ee-yogeshdahal90.projects.earthengine.app/view/contour">Pro Asset Mapper App</a>...</p>
+
+    <div class="header">
+        <h1>⛰️ Pro Asset Mapper</h1>
+        <p>High-Visibility Professional Contour Utility | Engineered by Yogesh Dahal</p>
+    </div>
+
+    <div class="app-container">
+        <iframe 
+            src="https://ee-yogeshdahal90.projects.earthengine.app/view/contour" 
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <div class="footer">
+        Powered by Google Earth Engine & SRTM Digital Elevation Data
+    </div>
+
 </body>
 </html>
